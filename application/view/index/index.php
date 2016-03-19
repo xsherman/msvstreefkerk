@@ -1,7 +1,8 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Middenstandsvereniging Streefkerk</h1>
+        <img src="../img/logoIcon.png" height="150px"/>
+            <h1>MSV Streefkerk</h1>
             <h3>Bekijk hier alle evenementen en schrijf je in!</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Meer Informatie</a>
@@ -35,7 +36,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Evenementen</strong>
@@ -48,7 +49,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <i class="fa fa-camera fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Foto's &#38; Video's</strong>
@@ -61,7 +62,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-file-text fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
                                     <strong>Inschrijven</strong>
@@ -74,15 +75,16 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <i class="fa fa-building fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Sponsors</strong>
+                                    <strong>Bedrijven</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <a href="#" class="btn btn-light">Meer Informatie</a>
                             </div>
                         </div>
+                        
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -96,7 +98,7 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>Streefkerk</h1>
         </div>
     </aside>
 
@@ -111,6 +113,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
+                                    <div class="portfolio-item-banner">
+                                        <span>beachvolleybal</span>
+                                    </div>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
                                 </a>
                             </div>
@@ -118,6 +123,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
+                                    <div class="portfolio-item-banner">
+                                        <span>Jaarmarkt</span>
+                                    </div>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
                                 </a>
                             </div>
@@ -125,6 +133,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
+                                <div class="portfolio-item-banner">
+                                        <span>Kerstmarkt</span>
+                                    </div>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
                                 </a>
                             </div>
@@ -132,6 +143,9 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
+                                    <div class="portfolio-item-banner">
+                                        <span>De witte tent</span>
+                                    </div>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
                                 </a>
                             </div>
