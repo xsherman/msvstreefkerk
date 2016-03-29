@@ -2,12 +2,25 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
         <img src="../img/logoIcon.png" height="150px"/>
+            <hr class="main-screen-divider">
             <h1>MSV Streefkerk</h1>
             <h3>Bekijk hier alle evenementen en schrijf je in!</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Meer Informatie</a>
         </div>
+
     </header>
+
+    <nav class="navbar navbar-default ">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Evenementen</a></li>
+          <li><a href="#">Inschriijvingen</a></li> 
+          <li><a href="#">Bedrijven</a></li> 
+        </ul>
+      </div>
+    </nav>
 
     <!-- About -->
     <section id="about" class="about">
