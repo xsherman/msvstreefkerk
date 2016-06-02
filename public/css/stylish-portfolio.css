@@ -187,7 +187,19 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
+    font-size: 24px;
 }
+.service-item > h4{
+    font-size: 25px;
+}
+.text-primary{
+    transition: all 1s ease;
+}
+.service-item:hover .text-primary{
+    transform: rotate(360deg);
+}
+
+
 
 /* Callout */
 
@@ -237,7 +249,7 @@ hr.small {
     vertical-align: middle;
 }
 
-.img-portfolio {
+.img-portfolio {    
     margin: 0 auto;
 }
 
@@ -265,6 +277,10 @@ hr.small {
     padding: 27px;
     font-size: 22px;
 }
+
+.margin-top-nav{
+    margin-top: 74px !important;
+}
 /* Map */
 
 .map {
@@ -281,4 +297,14 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+
+
+
+
+.event-card{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid gray;
 }

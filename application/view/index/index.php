@@ -11,13 +11,13 @@
 
     </header>
 
-    <nav class="navbar navbar-default ">
+    <nav class="navbar navbar-default navbar-custom">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Evenementen</a></li>
-          <li><a href="#">Inschriijvingen</a></li> 
-          <li><a href="#">Bedrijven</a></li> 
+            <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>">Home</a></li>
+            <li <?php if (View::checkForActiveController($filename, "event")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>event">Evenementen</a></li>
+            <li <?php if (View::checkForActiveController($filename, "media")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>media">Media</a></li> 
+            <li <?php if (View::checkForActiveController($filename, "verenigingen")) { echo ' class="active" '; } ?>> <a href="<?php echo Config::get('URL'); ?>">Omgeving</a></li> 
         </ul>
       </div>
     </nav>
@@ -53,9 +53,7 @@
                             </span>
                                 <h4>
                                     <strong>Evenementen</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Meer Informatie</a>
+                                </h4>                                
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -67,36 +65,31 @@
                                 <h4>
                                     <strong>Foto's &#38; Video's</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Meer Informatie</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-file-text fa-stack-1x text-primary"></i>
+                                <i class="fa fa-map fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Inschrijven</strong>
+                                    <strong>Verenigingen</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Meer Informatie</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-building fa-stack-1x text-primary"></i>
+                                <i class="fa fa-users fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Bedrijven</strong>
+                                    <strong>Over Ons</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Meer Informatie</a>
                             </div>
                         </div>
+
                         
                     </div>
                     <!-- /.row (nested) -->
@@ -116,10 +109,9 @@
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h2>Evenementen</h2>
                     <hr class="small">
                     <div class="row">
@@ -129,7 +121,7 @@
                                     <div class="portfolio-item-banner">
                                         <span>beachvolleybal</span>
                                     </div>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/portfolio-1.jpg">
                                 </a>
                             </div>
                         </div>
@@ -139,7 +131,7 @@
                                     <div class="portfolio-item-banner">
                                         <span>Jaarmarkt</span>
                                     </div>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/portfolio-2.jpg">
                                 </a>
                             </div>
                         </div>
@@ -149,7 +141,7 @@
                                 <div class="portfolio-item-banner">
                                         <span>Kerstmarkt</span>
                                     </div>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/portfolio-3.jpg">
                                 </a>
                             </div>
                         </div>
@@ -159,15 +151,13 @@
                                     <div class="portfolio-item-banner">
                                         <span>De witte tent</span>
                                     </div>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <img class="img-portfolio img-responsive" src="/img/portfolio-4.jpg">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-                <!-- /.col-lg-10 -->
+                    <a href="<?php echo Config::get('URL'); ?>event" class="btn btn-dark">Bekijk alle evenementen</a>
             </div>
             <!-- /.row -->
         </div>
@@ -179,9 +169,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <h3> Meld u aan en schrijf u in bij de evenement.</h3>
+                    <a href="#" class="btn btn-lg btn-light">Aanmelden</a>
+                    <a href="#" class="btn btn-lg btn-dark">Registreren</a>
                 </div>
             </div>
         </div>

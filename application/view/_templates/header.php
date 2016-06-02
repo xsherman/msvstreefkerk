@@ -12,13 +12,13 @@
     <title>MSV Streefkerk</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,42 +32,24 @@
 
 <body>
 
-<nav class="navbar navbar-default" hidden>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>">Home</a></li>
+          <li <?php if (View::checkForActiveController($filename, "event")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>event">Evenementen</a></li>
+          <li <?php if (View::checkForActiveController($filename, "media")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>media">Media</a></li> 
+          <li <?php if (View::checkForActiveController($filename, "verenigingen")) { echo ' class="active" '; } ?>> <a href="<?php echo Config::get('URL'); ?>">Omgeving</a></li> 
+        </ul>
+      </div>
+    </nav>
+
+<nav id="default-nonFixed-nav" class="navbar navbar-default" display="block">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li> 
-      <li><a href="#">Page 3</a></li> 
+      <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>">Home</a></li>
+      <li <?php if (View::checkForActiveController($filename, "event")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>event">Evenementen</a></li>
+      <li <?php if (View::checkForActiveController($filename, "media")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>media">Media</a></li> 
+      <li <?php if (View::checkForActiveController($filename, "verenigingen")) { echo ' class="active" '; } ?>> <a href="<?php echo Config::get('URL'); ?>">Omgeving</a></li> 
     </ul>
   </div>
 </nav>
-
-    <!-- Navigation 
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Menu</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >Over Ons</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>-->
