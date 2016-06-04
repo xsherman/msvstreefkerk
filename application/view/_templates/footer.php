@@ -53,9 +53,7 @@
     });
 
     // Scrolls to the selected menu item on the page
-    $(function() {
-        SetCustomNav();
-        ActivateFixedNav();
+    $(function() {;
 
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -64,46 +62,12 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - 74
                     }, 1000);
                     return false;
                 }
             }
         });
-
-        $(window).scroll(function (event) {
-            ActivateFixedNav();
-        });
-
-         function SetCustomNav(){
-            var page = (window.location.pathname).split("/")[1];
-            switch(page){
-                case "": $("#default-nonFixed-nav").hide(); break;
-                case "index": $("#default-nonFixed-nav").hide(); break;
-                default: $("#default-nonFixed-nav").show(); break;
-            }            
-        }
-
-        function ActivateFixedNav(){           
-            var screenwidth = $(window).width();
-            var scroll = $(window).scrollTop();
-
-            var scrollnav = $(".navbar-custom").offset();
-
-
-            if(( !$("#default-nonFixed-nav").is(":visible") && scroll > scrollnav.top) && screenwidth > 768){
-                $(".navbar-fixed-top").show();
-
-            }else{
-                $(".navbar-fixed-top").hide();
-            }
-
-            if($(".navbar-fixed-top").is(":visible")){
-                $(document.body).addClass("margin-top-nav");
-            } else{
-                $(document.body).removeClass("margin-top-nav");
-            }
-        }
     });
     </script>
 

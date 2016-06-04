@@ -1,26 +1,16 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-        <img src="../img/logoIcon.png" height="150px"/>
+        <img src="../img/logo2.png" height="150px"/>
             <hr class="main-screen-divider">
             <h1>MSV Streefkerk</h1>
             <h3>Bekijk hier alle evenementen en schrijf je in!</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Meer Informatie</a>
         </div>
-
     </header>
 
-    <nav class="navbar navbar-default navbar-custom">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li <?php if (View::checkForActiveController($filename, "index")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>">Home</a></li>
-            <li <?php if (View::checkForActiveController($filename, "event")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>event">Evenementen</a></li>
-            <li <?php if (View::checkForActiveController($filename, "media")) { echo ' class="active" '; } ?>>        <a href="<?php echo Config::get('URL'); ?>media">Media</a></li> 
-            <li <?php if (View::checkForActiveController($filename, "verenigingen")) { echo ' class="active" '; } ?>> <a href="<?php echo Config::get('URL'); ?>">Omgeving</a></li> 
-        </ul>
-      </div>
-    </nav>
+   
 
     <!-- About -->
     <section id="about" class="about">
@@ -169,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3> Meld u aan en schrijf u in bij de evenement.</h3>
+                    <h3> Meld u aan en schrijf u in bij de evenementen.</h3>
                     <a href="#" class="btn btn-lg btn-light">Aanmelden</a>
                     <a href="#" class="btn btn-lg btn-dark">Registreren</a>
                 </div>
